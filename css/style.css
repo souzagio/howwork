@@ -23,6 +23,7 @@
     --fontalter: 'DM+Mono', monospace;
 }
 
+/*Global Configuration */
 body{
     height: 300vh;
 }
@@ -116,8 +117,15 @@ main{
     padding-top: 120px;
     padding-left: 10px;
     background-color: #fff;
+    color: black;
 }
 
 main h1{
     margin-bottom: 15px;
+    text-align: center;
+}
+
+main h3{
+    text-align: center;
+
 }
