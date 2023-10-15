@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    caret-color: transparent
+}
+
+/*Fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Nosifer&family=Oxanium:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --cHTML: #F96D15;
+    --cor01: #EF9A53;
+    --cor02: #665C84;
+    --cor03: #FF7657;
+    --cor04: #FFBA5A;
+    --cor05: #FBEED7;
+    --fontText: 'Inconsolata', monospace;
+}
+
+body{
+    height: 300vh;
+}
+/* >>> HEADER START <<< */
+.hide{
+    display: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: var(--cHTML);
+    min-height: 100px;
+    padding: 15px 25px 0 25px;
+}
+
+/*Menu de navegação */
+header nav{
+    position: fixed;
+    background-color: var(--cor01);
+    padding: 15px 15px 15px 15px;
+    height: 100%;
+    width: 180px;
+    border-radius: 10px 10px 0 0;
+    margin-top: -14px;
+    transition: .8s;
+}
+
+
+/*Menu Header */
+header h1{
+    margin-bottom: 15px;
+    color: black;
+    position: fixed;
+}
+
+header i.burguer{
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: -5px;
+    border-radius: 15px;
+    padding: 3px;
+    transition: .4s;
+    &:hover{
+        background-color: var(--cor02);
+        color: var(--cor04);
+    }
+}
+header ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+header ul li{
+    margin: 15px -14px 15px -14px;
+    padding: 15px 0 15px 15px;
+    &:hover{
+        background-color: var(--cor02);
+    }
+}
+
+/* Links */
+header a{
+    color: var(--cor02);
+    font-family: var(--fontText);
+    font-weight: 400;
+}
+
+/* Events */
+header li:hover a{
+    color: white;
+}
