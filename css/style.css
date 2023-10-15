@@ -59,6 +59,7 @@ header nav{
     width: 210px;
     border-radius: 10px 10px 0 0;
     margin-top: -14px;
+    margin-left: -25px;
     transition: .8s;
 }
 
