@@ -70,7 +70,7 @@ header #header-img{
 /*Menu de navegação */
 header nav{
     position: fixed;
-    background-color: orangered;             /* var(--cor01);*/
+    background-color: var(--cor01);
     padding: 15px 15px 15px 15px;
     height: 100%;
     width: 210px;
@@ -80,8 +80,6 @@ header nav{
     transition: .8s;
 }
 
-
-
 header i.burguer{
     cursor: pointer;
     margin-right: 5px;
@@ -89,6 +87,7 @@ header i.burguer{
     border-radius: 15px;
     padding: 3px;
     transition: .4s;
+    animation-timing-function: ease-in-out;
     &:hover{
         background-color: var(--cor02);
         color: var(--cor04);
@@ -105,6 +104,7 @@ header ul{
 header ul li{
     margin: 15px -14px 15px -14px;
     padding: 15px 0 15px 15px;
+    cursor: pointer;
     &:hover{
         background-color: var(--cor02);
     }
@@ -151,4 +151,55 @@ main h3{
         -webkit-background-clip: text;
         color: transparent;
     }
+}
+
+/*>>> DROPDOWN MENU-TECNOLOGIA <<<*/
+.sub-menu-1{
+    position: absolute;
+    left: 215px;
+    top: 132px;
+    width: 150px;
+    height: 179px;
+    background-color: var(--cor01);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-top: 0;
+    display: none;
+}
+
+.sub-menu-1 ul{
+    padding: 0;
+}
+
+.sub-menu-1 ul li{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0;
+    display: flex;
+}
+
+header ul li#menu-tec:hover .sub-menu-1{
+    display: block;
+}
+
+.sub-menu-1.expanded{
+    display: block;
+}
+
+/*>>> DROPDOWN sub-MENU-TECNOLOGIA <<<*/
+.sub-menu-2{
+    position: absolute;
+    background-color: var(--cor01);
+    left: 150px;
+    top: 0px;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 100%;
+    height: 243px;
+    display: none;
+}
+
+
+#sub-web:hover .sub-menu-2{
+    display: block;
 }

@@ -34,3 +34,18 @@ openMenu.addEventListener('click', function(){
     }*/
 })
 
+
+/*setTimeout(() => {
+    alert('Bem vindo(a) ao "Como Funciona!"')
+}, 11500);*/
+
+document.querySelector("#menu-tec").addEventListener('mouseenter',function(){
+    clearTimeout(subMenu)
+    this.querySelector(".sub-menu-1").classList.add("expanded")
+})
+
+document.querySelector("#menu-tec").addEventListener('mouseleave',function() {
+      subMenu = setTimeout(function() {
+        this.querySelector(".sub-menu-1").classList.remove("expanded")
+    }.bind(this), 300)
+})
