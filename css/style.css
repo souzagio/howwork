@@ -2,8 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    caret-color: transparent;
     text-decoration: none;
-    caret-color: transparent
 }
 
 /*Fonts import*/
@@ -19,6 +19,7 @@
     --cor03: #FF7657;
     --cor04: #FFBA5A;
     --cor05: #FBEED7;
+    --coCSS: rgb(5, 99, 221);
     --fontText: 'Inconsolata', monospace;
     --fontalter: 'DM+Mono', monospace;
 }
@@ -122,41 +123,10 @@ header li:hover a{
     color: white;
 }
 
-/*>>> MAIN START <<< */
-main{
-    padding: 120px 0 50px 20px;
-    padding-top: 120px;
-    padding-left: 10px;
-    background-color: #fff;
-    color: black;
-}
-
-main h1{
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-main h3{
-    text-align: center;
-}
-
-.title{
-    text-align: center;
-    font-style: italic;
-    text-decoration: underline;
-    cursor: pointer;
-    &:hover{
-        background-image: linear-gradient(171deg, var(--cHTML) 50%, rgb(5, 99, 221) 30%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-}
-
 /*>>> DROPDOWN MENU-TECNOLOGIA <<<*/
 .sub-menu-1{
     position: absolute;
-    left: 215px;
+    left: 211px;
     top: 132px;
     width: 150px;
     height: 179px;
@@ -199,7 +169,53 @@ header ul li#menu-tec:hover .sub-menu-1{
     display: none;
 }
 
+/* Sub-Menu for mobile */
+@media screen {
+    
+}
 
 #sub-web:hover .sub-menu-2{
     display: block;
 }
+
+/*>>> MAIN START <<< */
+main{
+    padding: 120px 0 50px 20px;
+    padding-top: 120px;
+    padding-left: 10px;
+    background-color: #fff;
+    color: black;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--cor03);
+    font-style: italic;
+
+    &:visited{
+        color: var(--coCSS);
+    }
+}
+
+main h1{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+main h3{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover{
+        background-image: linear-gradient(171deg, var(--cHTML) 50%, rgb(5, 99, 221) 30%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
